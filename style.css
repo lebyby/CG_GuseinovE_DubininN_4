@@ -1,0 +1,114 @@
+@font-face {
+    font-family: JetBrainsMono Regular;
+    src:url(fonts/JetBrainsMono-Regular.ttf);
+}
+
+body{
+    font-family: JetBrainsMono Regular, sans-serif;
+    font-size: 20px;
+}
+
+.word {
+    font-family: JetBrainsMono Regular, sans-serif;
+    flex-wrap: wrap;
+    margin: 200px;
+    font-size: 37px;
+
+}
+
+
+.table {
+    float: left;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+
+.input_number {
+    font-family: JetBrainsMono Regular, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    margin-left: 35px;
+    width: 120px;
+
+}
+
+
+.segmentButton {
+    display: inline-block;
+    border-radius: 12px;
+    background-color: #0284c8;
+    border: none;
+    color: #FFFFFF;
+    font-family: JetBrainsMono Regular, sans-serif;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 1025px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    /*float: right;*/
+}
+
+.segmentButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.segmentButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.segmentButton:hover span {
+    padding-right: 25px;
+}
+
+.segmentButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 29px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: JetBrainsMono Regular, sans-serif;
+    outline: none;
+    color: #ffffff;
+    background-color: #009ef3;
+    border: none;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    box-shadow: 0 9px #898991;
+}
+
+.button:hover {background-color: #227ab5
+}
+
+.button:active {
+    background-color: #227ab5;
+    box-shadow: 0 5px #898991;
+    transform: translateY(4px);
+}
+
+.col {
+    font-family: JetBrainsMono Regular, sans-serif;
+    font-size: 29px;
+}
